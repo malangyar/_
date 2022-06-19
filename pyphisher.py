@@ -610,6 +610,7 @@ if __name__ == '__main__':
         system("stty -echoctl") # Skip printing ^C
         if update:
             updater()
+        main()
     except KeyboardInterrupt:
         pexit()
     except Exception as e:
